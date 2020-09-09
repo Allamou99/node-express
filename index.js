@@ -15,7 +15,7 @@ app.use(BodyPaser.json());
 
 app.use('/dishes', dishRouter);
 app.use('/promotions', promoRouter);
-app.use('/leaders', leaderRouter);
+app.use('/leaders',leaderRouter);
 
 const server = http.createServer(app);
 server.listen(port, hostname, () => {
